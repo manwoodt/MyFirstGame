@@ -13,7 +13,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/button_color_2"
         android:contentDescription="@string/back_button_description"
         android:src="?attr/homeAsUpIndicator"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/Description_name"
                 android:textColor="@color/button_color_2"
-                android:textSize="20dp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/FreePlay_and_settings_name"
                 android:textColor="@color/button_color_2"
-                android:textSize="20sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -81,7 +81,7 @@
                 android:layout_marginTop="0dp"
                 android:text="@string/record"
                 android:textColor="@color/button_color_2"
-                android:textSize="20sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -91,7 +91,7 @@
                 android:text="@string/Author"
                 android:textColor="@color/button_color_2"
                 android:textColorHighlight="@color/white"
-                android:textSize="20sp" />
+                android:textSize="22sp" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
