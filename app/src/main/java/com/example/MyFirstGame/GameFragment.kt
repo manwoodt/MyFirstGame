@@ -46,7 +46,11 @@ class GameFragment : BaseGameFragment() {
         initializeColors()
         initializeSounds()
         clickButtons()
-        binding.buttonBack.setOnClickListener { findNavController().popBackStack() }
+        binding.buttonBack.setOnClickListener {
+            if (level > highScore) highScore = level
+            binding.textViewHighscore.text = "Рекорд: $highScore"
+            saveHighScore()
+            findNavController().popBackStack() }
     }
 
     private fun initializeButtons() {
