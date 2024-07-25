@@ -1,6 +1,7 @@
 package com.example.MyFirstGame
 
 import android.animation.ObjectAnimator
+import android.content.res.Configuration
 import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -34,10 +35,14 @@ class GameFragment : BaseGameFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        loadSettings()
-        loadHighScore()
-        init()
-        startGame()
+        if (savedInstanceState != null) {
+            restoreState(savedInstanceState)
+        } else {
+            loadSettings()
+            loadHighScore()
+            init()
+            startGame()
+        }
     }
 
 
@@ -136,5 +141,26 @@ class GameFragment : BaseGameFragment() {
         binding.textViewHighscore.text = "Рекорд: $highScore"
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putIntegerArrayList("userSequence", ArrayList(userSequence))
+        outState.putIntegerArrayList("rightSequence", ArrayList(rightSequence))
+        outState.putInt("highScore", highScore)
+        outState.putInt("level", level)
+    }
+
+    private fun restoreState(savedInstanceState: Bundle) {
+        userSequence.clear()
+        rightSequence.clear()
+        userSequence.addAll(savedInstanceState.getIntegerArrayList("userSequence") ?: emptyList())
+        rightSequence.addAll(savedInstanceState.getIntegerArrayList("rightSequence") ?: emptyList())
+        highScore = savedInstanceState.getInt("highScore", 0)
+        level = savedInstanceState.getInt("level", 0)
+
+        binding.textViewLevel.text = "Уровень: $level"
+        binding.textViewHighscore.text = "Рекорд: $highScore"
+
+        lifecycleScope.launch { playSequence() }
+    }
 
 }

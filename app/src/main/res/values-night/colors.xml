@@ -1,0 +1,20 @@
+<resources>
+    <color name="colorPrimary">#BB86FC</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC6</color>
+    <color name="colorAccentDark">#03DAC6</color>
+    <color name="text">#FFFFFF</color>
+    <color name="background">#000000</color>
+    <color name="button_color_1">#00BCD4</color>
+    <color name="button_color_2">#009688</color>
+    <color name="button_color_3">#4CAF50</color>
+    <color name="button_color_4">#8BC34A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="colorPrimaryNight">#BB86FC</color>
+    <color name="colorPrimaryDarkNight">#3700B3</color>
+    <color name="colorAccentNight">#03DAC6</color>
+    <color name="colorAccentDarkNight">#03DAC6</color>
+    <color name="textNight">#FFFFFF</color>
+    <color name="backgroundNight">#000000</color>
+</resources>
