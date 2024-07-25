@@ -75,10 +75,11 @@ class SettingsFragment : Fragment(), AdapterView.OnItemSelectedListener {
 
         soundTheme = sharedPref.getInt("soundTheme",0)
         binding.spinnerSoundTheme.setSelection(soundTheme)
-        binding.spinnerSoundTheme.onItemSelectedListener
+        binding.spinnerSoundTheme.onItemSelectedListener = this
     }
     override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
-        editor.putInt("soundTheme", position).apply()
+        soundTheme = position
+        saveSettings()
     }
 
     override fun onNothingSelected(parent: AdapterView<*>?) {
