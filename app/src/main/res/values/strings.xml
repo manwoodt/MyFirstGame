@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">bonusExercise04</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Author"><b>Автор</b> - manwoodt</string>
+    <string name="Description"><b>Описание игры:</b>\n\n   При запуске игры начинает проигрываться последовательность из звуков четырёх кнопок. <b>Твоя задача</b> - повторить последовательность, нажимая кнопки в правильном порядке.\n\n    На каждом уровне добавляется новый звук. Приложение сохраняет твой лучший результат и показывает его рядом с текущим уровнем.\n В режиме \"Свободная игра\" можно просто нажимать кнопки без ограничений.</string>
+    <string name="record">\n<b>Твой рекорд: </b></string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string-array name="spinner_choices">
+        <item>Птички</item>
+        <item>Игра</item>
+        <item>Смех</item>
+        <item>Крик</item>
+    </string-array>
+</resources>
