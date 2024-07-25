@@ -1,6 +1,7 @@
 package com.example.MyFirstGame
 
 import android.os.Bundle
+import android.text.Html
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -28,17 +29,12 @@ class AboutFragment : Fragment() {
         loadHighScore()
     }
 
+
     private fun loadHighScore() {
         val sharedPref =
             requireActivity().getSharedPreferences("HighScore", AppCompatActivity.MODE_PRIVATE)
         highScore = sharedPref.getInt("HighScore", 0)
-        binding.textViewHighscore.text = "\nТвой рекорд: $highScore"
-    }
-
-    companion object {
-        @JvmStatic
-        fun newInstance() =
-            AboutFragment()
+        binding.textViewHighscore.text = "Твой рекорд: $highScore"
     }
 
 }

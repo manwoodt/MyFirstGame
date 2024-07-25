@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import com.example.MyFirstGame.databinding.FragmentSettingsBinding
 
-//enum class SoundThemes {BIRDS, LAUGH, SCREAM, GAME}
 
 
 class SettingsFragment : Fragment(), AdapterView.OnItemSelectedListener {

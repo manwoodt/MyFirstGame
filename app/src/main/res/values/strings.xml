@@ -3,7 +3,20 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Author"><b>Автор</b> - manwoodt</string>
-    <string name="Description"><b>Описание игры:</b>\n\n   При запуске игры начинает проигрываться последовательность из звуков четырёх кнопок. <b>Твоя задача</b> - повторить последовательность, нажимая кнопки в правильном порядке.\n\n    На каждом уровне добавляется новый звук. Приложение сохраняет твой лучший результат и показывает его рядом с текущим уровнем.\n В режиме \"Свободная игра\" можно просто нажимать кнопки без ограничений.</string>
+    <string name="Description_name">Описание игры:</string>
+
+    <string name="Description">При запуске игры начинает проигрываться последовательность из звуков четырёх кнопок.
+        <b>Твоя задача</b> - повторить последовательность, нажимая кнопки в правильном порядке.
+        C каждым уровнем последовательность увеличивается.
+        </string>
+
+    <string name="FreePlay_and_settings_name">Дополнительно:
+    </string>
+    <string name="FreePlay_and_settings">
+       - в режиме \"Свободная игра\" можно нажимать кнопки без ограничений.\n\n
+        - в настройках можно отключить звук, выделение кнопок, изменить время задержки между звуками, и таким образом отрегулировать сложность игры под себя\n\n
+       - обязательно попробуй сменить звуковую тему в настройках!
+    </string>
     <string name="record">\n<b>Твой рекорд: </b></string>
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
@@ -19,6 +32,7 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="back_button_description">Кнопка назад</string>
     <string-array name="spinner_choices">
         <item>Птички</item>
         <item>Игра</item>
