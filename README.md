@@ -26,6 +26,6 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/ваш_пользователь/MyFirstGame.git
+   git clone https://github.com/manwoodt/MyFirstGame.git
 2. Откройте проект в Android Studio.
 3. Запустите приложение на эмуляторе или реальном устройстве.
